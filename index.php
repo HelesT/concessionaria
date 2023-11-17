@@ -18,7 +18,7 @@
     <?php
         require_once("PHP/conecta.php");
         if(isset($_GET["id"])==true){
-
+            echo "<script>coloreArea(".$_GET['id'].");</script>";
         }
     ?>
 
