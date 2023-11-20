@@ -5,21 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concessionaria</title>
+    <style>
+        body{
+            background-color: gray
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
-
-<style>
-    body{
-        background-color: black
-    }
-</style>
-
-
 <body>
     <?php
-        require_once("PHP/conecta.php");
-        if(isset($_GET["id"])==true){
-            echo "<script>coloreArea(".$_GET['id'].");</script>";
-        }
+        // require_once("PHP/conecta.php");
+        // if(isset($_GET["id"])==true){
+        //     echo "<script>coloreArea(".$_GET['id'].");</script>";
+        // }
     ?>
 
     <main id="patio">
@@ -32,5 +30,4 @@
     </main>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </html>
