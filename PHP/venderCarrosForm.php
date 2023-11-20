@@ -42,9 +42,16 @@
         <select name = "idConcessionaria">
             <?php
                 foreach($concessionaria as $c){?>
-                    <option value = "<?= $c['concessionaria']?>"></option>
+                    <option value = "<?= $c['concessionaria']?>"><?= $c['concessionaria']?></option>
                 <?php } ?> 
         </select>
+        <select name = "clientes">
+            <?php
+                foreach($concessionaria as $c){?>
+                    <option value = "<?= $c['nome']?>"><?= $c['nome']?></option>
+                <?php } ?> 
+        </select>
+        <button type = "submit">Vender carro</button>
     </form>
 </body>
 </html>
